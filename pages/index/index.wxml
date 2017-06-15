@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top">
+   <!--设置余额 -->
+    <view class="top_month" bindtap="editBalanceView">
+    <text class="font-size14">{{month}}{{topBalance}}</text>
+    <image class="editImage" src="/images/index/edit.png" ></image>
+    </view>
+    <!--金额设置 -->
+   <view class="showBalance">
+       <text class="balanceStyle" id="balanceText">{{balance}}</text>
+   </view>
+     <!--时间选择 -->
+     <view class="timeSelect">
+     <image class="editImage" src="/images/index/date.png"></image>
+     <picker mode="date" class="date_picker" value="{{dateValue}}" fields="month" start="1999-01" end="2999-12" bindchange="datePickerBindchange">
+	 {{dateValue}}
+</picker>
+     </view>
+     <!--收入 支出 -->
+     <view class="in_out_balance">
+      <view class="in_balance">
+      <view class="in_balance_text"> <text >收入</text></view>
+      <view class="in_balance_text"> <text>+{{inBalance}}</text></view>
+      </view>
+      <view class="middle_balance"><image src="/images/index/shut.png"></image></view>
+      <view class="out_balance">
+       <view class="out_balance_text"> <text>支出</text></view>
+      <view class="out_balance_text"> <text>-{{outBalance}}</text></view>
+      </view>
+   </view>
+  </view>
+ 
+
+  <view class="{{shadeStyle}}" id="shadeArea">
+  
+      <view class="pop_edit">
+        <view class="close_tag">
+          <image class="close_img_position"  bindtap="closePop" src="/images/index/close.png"></image>
+        </view>
+        <view class="pop_top_info"><text>请设置月度预算（元）</text></view>
+          <view class="pop_balance" >
+        <input class="font-size35" value="{{balance}}" bindinput="inputBlurEvent" type="text"/>
+      </view>
+      <view class="pop_button">
+      <button class="button_style" type="submit"  bindtap="finishEdit">完成</button>
+      </view>
+      <view class="pop_bottom_info">
+      <text>提示：每月1日0时，预算将按照最后一次设置的额度进行自动设置，如需变更，请手动重新设置</text>
+      </view>
+    </view>
+  </view>
+  
+</view>
