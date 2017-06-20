@@ -154,3 +154,43 @@ padding-top:10px;
   text-align: left;
   padding-top:3px;
 }
+.menuFoot{
+  position: fixed;
+  bottom: 10px;
+  width:100%;
+  height: 15%;
+  text-align: center;
+}
+.menuFoot_left{
+ width: 40%;
+ margin-top:10%;
+  background: #dff1ff;
+   height: 100%;
+}
+.menuFoot_midd{
+   background: #dff1ff;
+width: 20%;
+ height: 100%;
+ margin-top:20px;
+ border-top-left-radius: 50%;
+ border-top-right-radius: 50%;
+}
+.menuFoot_midd image{
+  padding-top:27%;
+   width:45px;
+  height: 45px;
+}
+.menuFoot_right{
+   background: #dff1ff;
+width: 40%;
+ margin-top:10%;
+  height: 100%;
+}
+.menuFoot_txt{
+  color: #08799b;
+}
+.menuFoot_icon image{
+   width:25px;
+  height: 25px;
+  padding-top:5px;
+}

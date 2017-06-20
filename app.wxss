@@ -45,3 +45,6 @@ a:hover,a:active{text-decoration:underline;color:#f60;}
 .inline_middle{
   vertical-align:middle;
 }
+.float_left{
+  float: left;
+}

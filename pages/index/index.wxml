@@ -31,7 +31,7 @@
    </view>
   </view>
  
-
+<!--弹出层 -->
   <view class="{{shadeStyle}}" id="shadeArea">
   
       <view class="pop_edit">
@@ -50,5 +50,20 @@
       </view>
     </view>
   </view>
-  
+  <!--底部 -->
+  <view class="menuFoot">
+    <view class="float_left menuFoot_left">
+     <view class="menuFoot_icon"><image src="/images/index/count.png"></image></view>
+      <view class="menuFoot_txt"> 统计 </view>
+   
+    </view>
+     <view class="float_left menuFoot_midd"><image src="/images/index/plus.png"></image>
+     
+     </view>
+     <view class="float_left menuFoot_right">
+     <view class="menuFoot_icon"><image src="/images/index/c.png"></image></view>
+      <view class="menuFoot_txt"> 计算器 </view>
+ </view>
+
+  </view>
 </view>
